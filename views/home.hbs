@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 2 Contact Form</title>
+    <link rel="icon" type="image/x-icon" href="public/images/logo.png">
+    <link rel="stylesheet" href="public/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- NAVBAR -->
+    <nav>
+        <div class="nav-left">
+            <img src="../public/images/logo.png">
+        <ul>
+            <li>
+                <a href="/home">Home</a>
+            </li>
+
+            <li>
+                <a href="/addproject">Add Project</a>
+            </li>
+        </ul>
+        </div>
+    
+        <div class="nav-right">
+            <a href="/contact-me">Contact Me</a> 
+        </div>
+    </nav>
+
+<!-- HOME LEFT -->
+{{#if isLogin}}
+    <div class="button-add">
+        <a href= "/addproject">Add Project</a>
+    </div>
+{{/if}}
+
+    <div class="form-card">
+        <div class="container-card">
+            <div class="card-left">
+                <div class="title">
+                    <h1>Hi, Welcome to My Hut</h1>
+                </div>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque gravida rutrum. Duis tellus quam, volutpat ac ex sit amet, viverra euismod urna. Maecenas mauris purus, dignissim a semper vulputate, sagittis luctus velit. Nulla fringilla augue sit amet diam luctus ullamcorper. Nullam sed tincidunt nisl. Phasellus suscipit tincidunt tristique. Phasellus vehicula mi vitae tortor blandit, at sollicitudin mauris mollis. Donec placerat ex ac sapien tempor, vitae gravida nulla sagittis.
+                    </p>
+                </div>
+                <div class="form-info">
+                    <div class="contact">
+                        <button>Contact</button>
+                        <p>Download CV <i class="fa fa-download"></i></p>
+                    </div>
+                </div>
+                <div class="socmed">
+                    <div class="group-socmed">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div class="group-socmed">
+                        <i class="fa-brands fa-instagram-square"></i>
+                    </div>
+                    <div class="group-socmed">
+                        <i class="fa-brands fa-facebook-square"></i>
+                    </div>
+                    <div class="group-socmed">
+                        <i class="fa-brands fa-twitter-square"></i>
+                    </div>
+                </div>
+            </div>
+        <!-- HOME RIGHT -->
+            <div class="card-right">
+                <center>
+                <div class="image">
+                    <img src="../public/images/kucing.jpg" alt="">
+                </div>
+                <div class="name">
+                    <h2>Sherly Pisperi P</h2>
+                </div>
+                <div class="course">
+                    <p>Fullstact Developer</p>
+                </div>
+                </center>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

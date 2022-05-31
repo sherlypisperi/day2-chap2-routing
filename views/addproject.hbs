@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 4 Creating Blog Page</title>
+    <link rel="icon" type="image/x-icon" href="public/images/logo.png">
+    <link rel="stylesheet" href="public/myproject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="myproject.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-left">
+            <img src="../public/images/logo.png">
+        <ul>
+            <li>
+                <a href="/home">Home</a>
+            </li>
+
+            <li>
+                <a href="/addproject">Add Project</a>
+            </li>
+        </ul>
+        </div>
+    
+        <div class="nav-right">
+            <a href="/contact-me">Contact Me</a> 
+        </div>
+    </nav>
+<!-- MY PROJECT --><div class="project" id="project">
+    <div class="form-project">
+        <div class="containerProject-form">
+            <form action="/addproject" method="POST">
+                <center>
+                    <h1 style="margin-top: 50px;">ADD MY PROJECT</h1>
+                </center>
+        <!--INPUT PROJECT-->
+                <div>
+                <div class="project-name">
+                    <label for="project-name">Project Name</label>
+                    <input id="project-name" type="text" name="projectName" />
+                </div>
+        <!--INPUT PROJECT-->
+                <br>
+        <!--DATE-->
+                <div class="date">
+                    <div class="start-date">
+                        <label for="start-date">Start Date</label>
+                        <input id="start-date" type="date" name="startDate" />
+                    </div>
+                    <div class="end-date">
+                        <label for="end-date">End Date</label>
+                        <input id="end-date" type="date" name="endDate" />
+                    </div>
+                </div>
+                <br>
+        <!--DATE-->
+        <!--DESCRIPTION-->
+                <div class="description">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" ></textarea> 
+                </div>
+                <br>
+        <!--TECHNOLOGIES-->
+                <div class="technologies">
+                    <div class="technologies-title">
+                        <label for="technologies-title">Technologies</label>
+                    </div>
+                    <br>
+                <!--TECHNOLOGIES TOP-->
+                    <div class="tech-option">
+                        <div class="top">
+                            <div style="display:inline-flex; margin-right: 100px;" id="checkbox">
+                                <input type="checkbox" class="input-checkbox" id="nodejs" value="fa-brands fa-node-js"/>
+                                <label class="tech-container" for="nodejs" name="nodejs" >Node Js</label>
+                            </div>
+                            <div style="display:inline-flex; margin-left: 20px;">
+                                <input type="checkbox" class="input-checkbox" id="nextjs" value="fa-solid fa-atom"/>
+                                <label class="tech-container" for="nextjs" name="nextjs" >Next Js</label>
+                            </div>
+                        </div>
+                <!--TECHNOLOGIES TOP-->
+                <!--TECHNOLOGIES BOTTOM-->
+                        <div class="bottom">
+                            <div style="display:inline-flex; margin-right: 85px;">
+                                <input type="checkbox" class="input-checkbox" id="reactjs" value="fa-brands fa-react"/>
+                                <label class="tech-container" for="reactjs" name="reactjs" >React Js</label>
+                            </div>
+                            <div style="display:inline-flex; margin-left: 20px;">
+                                <input type="checkbox" class="input-checkbox" id="typescript" value="fa-brands fa-js-square"/>
+                                <label class="tech-container" for="typescript" name="typescript" >Type Script </label>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--TECHNOLOGIES BOTTOM-->
+        <!--UPLOAD IMAGE-->
+                <div class="form-group" style="margin-bottom: 30px">
+                    <label for="image">Upload Image</label>
+                    <div class="input-image">
+                        <label for="image">
+                            <p>Choose</p>
+                            <i class="fa fa-paperclip" aria-hidden="true"></i>
+                        </label>
+                        <input type="file" id="image" hidden=""/>
+                    </div> 
+                </div>
+                <!-- Input Image -->
+                
+            <!-- button -->
+            <div class="submit">
+            <button class="button-submit" type="submit">submit</button>
+            </div>
+            <!--UPLOAD IMAGE-->
+            </form>
+        </div>
+    </div>
+        <!--BLOGLIST HARDCORE-->
+    <div class="blog" id="blogs">
+        <div class="blog-form-first">
+            <div class="container-blog-form" style="display: inline-block; justify-content: flex-start;">
+                <div class="card">
+                    <div class="image">
+                        <img src="../public/images/mobile.png"/>
+                    </div>
+                    <div class="title" style="cursor:pointer;text-decoration: none;">
+                        <a href="/project-detail"><h1>Dumbways Mobile App - 2021 | {{id}}</h1></a>
+                    </div>
+                    <div>
+                        <p>16 April 2022 16:00 WIB</p>
+                        <p>Duration: 2 Month</p>
+                    </div>
+                    <div class="content">
+                        <p style="color: rgb(167, 164, 160);">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto beatae omnis similique aut, ducimus pariatur amet voluptates placeat expedita debitis, nisi minus, sequi facilis eligendi reiciendis suscipit hic quisquam officiis.
+                        </p>
+                    </div>
+                    <div class="technologies">
+
+                    </div>
+                    <div class="button-card">
+                        <p class="edit">Edit</p>
+                        <p class="delete">Delete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blog" id="blogs">
+        <div class="blog-form-first">
+            <div class="container-blog-form" style="display: inline-block; justify-content: flex-start;">
+                <div class="card">
+                    <div class="image">
+                        <img src="../public/images/mobile.png"/>
+                    </div>
+                    <div class="title" style="cursor:pointer;text-decoration: none;">
+                        <a href="/project-detail"><h1>Dumbways Mobile App - 2021</h1></a>
+                    </div>
+                    <div>
+                        <p>16 April 2022 16:00 WIB</p>
+                        <p>Duration: 2 Month</p>
+                    </div>
+                    <div class="content">
+                        <p style="color: rgb(167, 164, 160);">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto beatae omnis similique aut, ducimus pariatur amet voluptates placeat expedita debitis, nisi minus, sequi facilis eligendi reiciendis suscipit hic quisquam officiis.
+                        </p>
+                    </div>
+                    <div class="technologies">
+
+                    </div>
+                    <div class="button-card">
+                        <p class="edit">Edit</p>
+                        <p class="delete">Delete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blog" id="blogs">
+        <div class="blog-form-first">
+            <div class="container-blog-form" style="display: inline-block; justify-content: flex-start;">
+                <div class="card">
+                    <div class="image">
+                        <img src="../public/images/mobile.png"/>
+                    </div>
+                    <div class="title" style="cursor:pointer;text-decoration: none;">
+                        <a href="/project-detail"><h1>Dumbways Mobile App - 2021</h1></a>
+                    </div>
+                    <div>
+                        <p>16 April 2022 16:00 WIB</p>
+                        <p>Duration: 2 Month</p>
+                    </div>
+                    <div class="content">
+                        <p style="color: rgb(167, 164, 160);">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto beatae omnis similique aut, ducimus pariatur amet voluptates placeat expedita debitis, nisi minus, sequi facilis eligendi reiciendis suscipit hic quisquam officiis.
+                        </p>
+                    </div>
+                    <div class="technologies">
+
+                    </div>
+                    <div class="button-card">
+                        <p class="edit">Edit</p>
+                        <p class="delete">Delete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>

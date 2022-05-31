@@ -1,0 +1,137 @@
+body {
+    margin:0px;
+    background-color: rgb(247, 241, 241);
+}
+
+/*NAVBAR*/
+nav {
+    background-color:rgb(226, 224, 224);
+    display:flex;
+    height:7vh;
+}
+
+
+nav .nav-left{
+    flex:50%;
+    background-color: rgb(226, 224, 224);
+    padding-left:40px;
+    display:flex;
+    align-items: center;
+}
+
+nav .nav-left li{
+    display:inline;
+}
+
+nav .nav-left ul li a{
+    text-decoration:none;
+    color:black;
+    padding:12px;
+}
+
+nav .nav-right{
+    flex:50%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right: 80px;
+    text-decoration:none;
+    
+}
+
+nav .nav-right a{
+    background-color:black;
+    color:white;
+    padding:5px;
+    border-radius:5px;
+    font-size:15px;
+    text-decoration:none;
+}
+
+.button-add {
+    border : 1 px solid;
+    border-radius: 5px;
+    width : 100px;
+    height : 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+/* HOME LEFT */
+.form-card {
+    border:1px solid;
+    border-radius: 5px;
+    margin: 100px;
+    display:flex;
+    height: 93vh;
+    background-color: white;
+}
+
+.form-card .container-card {
+    display:inline-flex;
+}
+
+.container-card {
+    padding: 50px;
+}
+
+/* HOME LEFT */
+.card-left {
+    flex:60%;
+    margin-right:100px;
+}
+
+.card-left .content {
+    font-size: 20px;
+}
+
+.contact button, p {
+    display: inline;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.contact button {
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    width: 85px;
+}
+
+.group-socmed {
+    display: inline-block;
+    border-radius: 10px;
+}
+.group-socmed i{
+    display: inline-block;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+/* HOME RIGHT */
+.card-right {
+    flex: 40%;
+    margin-right: 30px;
+    margin-left: 70px;
+}
+
+.card-right img {
+    display: flex;
+    width:300px;
+    height: 400px;
+    justify-content: center;
+    align-items: flex-end;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.card-right .course {
+    font-size: 20px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Me</title>
+    <link rel="icon" type="image/x-icon" href="./public/images/logo.png">
+    <link rel="stylesheet" href="public/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="contact.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-left">
+            <img src="../public/images/logo.png">
+        <ul>
+            <li>
+                <a href="/home">Home</a>
+            </li>
+
+            <li>
+                <a href="/addproject">Add Project</a>
+            </li>
+        </ul>
+        </div>
+    
+        <div class="nav-right">
+            <a href="/contact-me">Contact Me</a> 
+        </div>
+    </nav>
+    <!-- CONTACT -->
+   <div class="form-contact">
+       <div class="container-contact">
+           <form action="">
+               <div class="title">
+                    <center>
+                        <h1>GET IN TOUCH</h1>
+                    </center>
+                </div>
+                <div class="name">
+                   <label for="name">Name</label>
+                   <input  id="name" type="text">
+                </div>
+                <div clas="email">
+                   <label for="email">Email</label>
+                   <input id="email" type="email">
+                </div>
+                <div clas="phone-number">
+                    <label for="phone-number">Phone Number</label>
+                    <input id="phoneNumber" type="text">
+                </div>
+                <div class="subject">
+                    <label for="subject">Subject</label>
+                    <select name="subject" id="subject">
+                        <option hidden></option>
+                        <option>Let's Talk</option> 
+                        <option>Let's Collaboration</option>
+                        <option>I'm Hiring</option>
+                    </select>
+                </div>
+                <div class="message">
+                    <label for="message">Your Message</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <div class="submit">
+                    <button class="button-submit" type="button" onclick="showData(event)">Submit</button>
+                </div>
+           </form>
+       </div>
+   </div>    
+</body>
+</html>
